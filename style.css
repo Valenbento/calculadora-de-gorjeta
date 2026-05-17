@@ -35,7 +35,9 @@ main{
 }
 
 .conta , 
-.gorjeta {
+.gorjeta,
+.pessoas
+ {
     margin-bottom: 2rem;
 }
 .conta label,
@@ -160,4 +162,24 @@ main{
     text-transform: uppercase;
     font-size: 1.25rem;
     padding-block: 0.5rem;
+}
+
+@media(min-width: 920px){
+    main{
+        display: flex;
+        gap: 3rem;
+        padding: 3rem;
+    }
+
+    main section{
+        width: 100%;
+        border-radius: 1.5625rem;
+        max-width: 57.5rem;
+        margin-inline: auto;
+    }
+
+    .gorjeta div{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
 }
