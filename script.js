@@ -17,7 +17,7 @@ function receberQuantidadePessoas(evento) {
      const paragrafoErro = document.querySelector(".pessoas #erro")
      const divErro = document.querySelector(".pessoas .input-box")
    
-     if(Number(evento.target.value) === 0) {
+     if(Number(evento.target.value) === 0 && evento.target.value !== "") {
       paragrafoErro.style.display = "block"
       divErro.setAttribute("id", "erro-div")
     } else {
@@ -90,4 +90,7 @@ function limpar(){
     pessoasInput.value = ""
     document.querySelector(".gorjeta-total > strong").innerHTML = "R$ 0.00"
      document.querySelector(".total > strong").innerHTML = "R$ 0.00"
+     conta = 0
+     porcentagem = 0
+     pessoas = 0
 }
